@@ -24,7 +24,7 @@
 <meta property="og:description" content="* 使用Hugo更新文章到博客 * 原来更新博文很简单，超级简单，几乎就是重复写入命令，看看能不能找个脚本省去这些重复的步骤吧。 * 就看我有没有文章可以更新了。  【打开终端】
 一、根目录下新建一个.md文件
  hugo new post/blog_1.md * 生成文件位置位于myblog/content/post目录下。 示例： “Content &quot;/Users/juanjuanli/myblog/content/post/blog_1.md&quot; created ...“  二、启动本地个人博客
- 根目录下 hugo server -t dream --buildDrafts 示例： ”Start building sites … … Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Press Ctrl&#43;C to stop“ 2.使用visual studio code打开位于myblog/content/post的blog_1.md * 更改标题并写一篇博客，保存。  三、部署到新建的GitHub储存库
+ 根目录下 hugo server -t dream --buildDrafts 示例： ”Start building sites … … Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Press Ctrl&#43;C to stop“ ^C% 2.使用visual studio code打开位于myblog/content/post的blog_1.md * 更改标题并写一篇博客，保存。  三、部署到新建的GitHub储存库
  根目录下 hugo --theme=dream --baseUrl=&quot;https://usandthem26." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://usandthem26.github.io/post/blog_2/" /><meta property="article:section" content="post" />
@@ -39,7 +39,7 @@
 <meta name="twitter:description" content="* 使用Hugo更新文章到博客 * 原来更新博文很简单，超级简单，几乎就是重复写入命令，看看能不能找个脚本省去这些重复的步骤吧。 * 就看我有没有文章可以更新了。  【打开终端】
 一、根目录下新建一个.md文件
  hugo new post/blog_1.md * 生成文件位置位于myblog/content/post目录下。 示例： “Content &quot;/Users/juanjuanli/myblog/content/post/blog_1.md&quot; created ...“  二、启动本地个人博客
- 根目录下 hugo server -t dream --buildDrafts 示例： ”Start building sites … … Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Press Ctrl&#43;C to stop“ 2.使用visual studio code打开位于myblog/content/post的blog_1.md * 更改标题并写一篇博客，保存。  三、部署到新建的GitHub储存库
+ 根目录下 hugo server -t dream --buildDrafts 示例： ”Start building sites … … Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Press Ctrl&#43;C to stop“ ^C% 2.使用visual studio code打开位于myblog/content/post的blog_1.md * 更改标题并写一篇博客，保存。  三、部署到新建的GitHub储存库
  根目录下 hugo --theme=dream --baseUrl=&quot;https://usandthem26."/>
 
 
@@ -189,7 +189,8 @@
  Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
  Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
  Press Ctrl+C to stop“
-
+ 
+ ^C% 
 
  2.使用visual studio code打开位于myblog/content/post的blog_1.md
 
@@ -202,12 +203,11 @@
 
 
      “Start building sites … 
-     …
+     hugo v0.91.2+extended darwin/arm64 BuildDate=unknown
 
-     Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-     Press Ctrl+C to stop”
+     Total in 27 ms”
  
- ^C% 
+
 
  根目录下
 
@@ -222,12 +222,11 @@
 
  git commit -m &quot;第二次提交&quot;
 
+     [master 2aa315c] 第二次提交
+     Committer: ...
 
-     “位于分支 master
-     您的分支与上游分支 'origin/master' 一致。
-
-     无文件要提交，干净的工作区”
-
+     8 files changed, 569 insertions(+), 120 deletions(-)
+     create mode 100644 post/blog_1/index.html
 
  git remote add origin https://github.com/usandthem26/usandthem26.github.io.git
 
@@ -237,12 +236,30 @@
 
  git push -u origin master
 
+     “枚举对象中: 25, 完成.
+     ...
+     remote: Resolving deltas: 100% (9/9), completed with 5 local objects.
+     To https://github.com/usandthem26/usandthem26.github.io.git
+     1cc37ab..2aa315c  master -&gt; master&quot;
+     分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。&quot;
+
+     * 刷新网页文章未更新到博客。
+
+继续
+
+ git remote add origin https://github.com/usandthem26/usandthem26.github.io.git
+     
+     &quot;error: 远程 origin 已经存在。
+
+ git push -u origin master
 
      “分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。
      Everything up-to-date”
+    
+     * 博文更新完成
 </code></pre>
 <p>五、刷新网页https://usandthem26.github.io/</p>
-<p>六、博文已更新</p>
+<p>六、博客已更新</p>
 <pre><code> 待续......
 </code></pre>
 
