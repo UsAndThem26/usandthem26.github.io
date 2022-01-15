@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UsAndThem26的博客</title>
+    <link>https://usandthem26.github.io/</link>
+    <description>Recent content on UsAndThem26的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Jan 2022 18:06:08 +0800</lastBuildDate><atom:link href="https://usandthem26.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用Hugo搭建个人博客网站【Mac端】</title>
+      <link>https://usandthem26.github.io/post/blog/</link>
+      <pubDate>Sat, 15 Jan 2022 18:06:08 +0800</pubDate>
+      
+      <guid>https://usandthem26.github.io/post/blog/</guid>
+      <description>【打开终端】
+一、使用brew安装Hugo
+ * 需要提前下载安装brew，网上有详细教程。 brew install hugo hugo version * 查看Hugo版本，安装完成。  二、使用Hugo生成一个博客网站
+ hugo new site myblog * Hugo为你创建了一个myblog文件夹，你网站的所有数据都将储存在这个文件夹当中。 示例： “Congratulations! Your new Hugo site is created in /Users/juanjuanli/mybolog. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/ or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content.</description>
+    </item>
+    
+  </channel>
+</rss>
