@@ -6,7 +6,19 @@
     <description>Recent content in Posts on UsAndThem26的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Jan 2022 18:06:08 +0800</lastBuildDate><atom:link href="https://usandthem26.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jan 2022 00:32:21 +0800</lastBuildDate><atom:link href="https://usandthem26.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用Hugo改动原有博文内容</title>
+      <link>https://usandthem26.github.io/post/blog_1/</link>
+      <pubDate>Sun, 16 Jan 2022 00:32:21 +0800</pubDate>
+      
+      <guid>https://usandthem26.github.io/post/blog_1/</guid>
+      <description>「非专业，不懂技术原理，单纯想要更改原先的的文章，只要目的达到了就可以了。于是就挨个试试看，有时间再去了解原理吧。」
+一、在vscode打开需要修改的文章.md文件
+ 修改内容并点击保存。  二、打开终端
+ 根目录myblog下 hugo server -t dream --buildDrafts 【Start building sites … hugo v0.91.2+extended darwin/arm64 BuildDate=unknown | ZH-CN -------------------+-------- Pages | 10 Paginator pages | 0 Non-page files | 0 Static files | 18 Processed images | 0 Aliases | 2 Sitemaps | 1 Cleaned | 0 Built in 13 ms Watching for changes in /Users/juanjuanli/myblog/{archetypes,content,data,layouts,static,themes} Watching for config changes in /Users/juanjuanli/myblog/config.toml Environment: &amp;quot;development&amp;quot; Serving pages from memory Running in Fast Render Mode.</description>
+    </item>
+    
     <item>
       <title>如何使用Hugo搭建个人博客网站【Mac端】</title>
       <link>https://usandthem26.github.io/post/blog/</link>
