@@ -24,7 +24,8 @@
 <meta property="og:description" content="【打开终端】
 一、使用brew安装Hugo
  * 需要提前下载安装brew，网上有详细教程。 brew install hugo hugo version * 查看Hugo版本，安装完成。  二、使用Hugo生成一个博客网站
- hugo new site myblog * Hugo为你创建了一个myblog文件夹，你网站的所有数据都将储存在这个文件夹当中。 示例： “Congratulations! Your new Hugo site is created in /Users/juanjuanli/mybolog. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/ or create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command. 2. Perhaps you want to add some content." />
+ hugo new site myblog * Hugo为你创建了一个myblog文件夹，你网站的所有数据都将储存在这个文件夹当中。 示例： “Congratulations! Your new Hugo site is created in /Users/juanjuanli/mybolog. ...“  三、为网站设置一个主题
+ * 可以到Hugo主题官网：themes.gohugo.io下载。 * 根据提示安装和配置主题，例如我选择了一个叫“Dream”的主题。 1.下载主题 * 使用git克隆主题到本地。 * 需要确认提前装好git，网上同样有详细教程，非常简单。 跟目录下 cd themes git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream 示例： &quot;正克隆到 &#39;dream&#39;... remote: Enumerating objects: 3111, done. remote: Counting objects: 100% (770/770), done. remote: Compressing objects: 100% (399/399), done." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://usandthem26.github.io/post/blog/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-01-15T18:06:08+08:00" />
@@ -38,7 +39,8 @@
 <meta name="twitter:description" content="【打开终端】
 一、使用brew安装Hugo
  * 需要提前下载安装brew，网上有详细教程。 brew install hugo hugo version * 查看Hugo版本，安装完成。  二、使用Hugo生成一个博客网站
- hugo new site myblog * Hugo为你创建了一个myblog文件夹，你网站的所有数据都将储存在这个文件夹当中。 示例： “Congratulations! Your new Hugo site is created in /Users/juanjuanli/mybolog. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/ or create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command. 2. Perhaps you want to add some content."/>
+ hugo new site myblog * Hugo为你创建了一个myblog文件夹，你网站的所有数据都将储存在这个文件夹当中。 示例： “Congratulations! Your new Hugo site is created in /Users/juanjuanli/mybolog. ...“  三、为网站设置一个主题
+ * 可以到Hugo主题官网：themes.gohugo.io下载。 * 根据提示安装和配置主题，例如我选择了一个叫“Dream”的主题。 1.下载主题 * 使用git克隆主题到本地。 * 需要确认提前装好git，网上同样有详细教程，非常简单。 跟目录下 cd themes git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream 示例： &quot;正克隆到 &#39;dream&#39;... remote: Enumerating objects: 3111, done. remote: Counting objects: 100% (770/770), done. remote: Compressing objects: 100% (399/399), done."/>
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha256-UXesixbeLkB/UYxVTzuj/gg3+LMzgwAmg3zD+C4ZASQ=" crossorigin="anonymous">
@@ -177,17 +179,7 @@
 
      示例：
      “Congratulations! Your new Hugo site is created in /Users/juanjuanli/mybolog.
-
-     Just a few more steps and you're ready to go:
-
-     1. Download a theme into the same-named folder.
-        Choose a theme from https://themes.gohugo.io/ or
-        create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command.
-     2. Perhaps you want to add some content. You can add single files
-        with &quot;hugo new &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&quot;.
-     3. Start the built-in live server via &quot;hugo server&quot;.
-
-     Visit https://gohugo.io/ for quickstart guide and full documentation.“
+     ...“
 </code></pre>
 <p>三、为网站设置一个主题</p>
 <pre><code>     * 可以到Hugo主题官网：themes.gohugo.io下载。
@@ -312,6 +304,8 @@
  
  hugo --theme=dream --baseUrl=&quot;https://usandthem26.github.io/&quot; --buildDrafts
 
+
+     
      * 生成一个public文件，里面有你的博客内容，然后再把public文件夹上传到GitHub储存库。
 
  
@@ -331,6 +325,14 @@
 
      * 写一个提交信息
 
+     示例：
+     &quot;git commit -m &quot;第一次提交&quot;[master（根提交） 7346f86]第一次提交
+     31 files changed, 2069 insertions(+)
+     create mode 100644 404.html
+     create mode 100644 categories/index.html
+     ...&quot;
+
+
  3.将本地public文件夹跟远端GitHub仓库进行关联
 
  git remote add origin https://github.com/usandthem26/usandthem26.github.io.git
@@ -338,11 +340,22 @@
  
  4.推到远端
 
- git -u origin master
+ git push -u origin master
 
      * 输入用户名和密码
 
      * 如果输入密码这步提示需要个人令牌，需要到GitHub生成一个个人令牌，网上也有详细教程，很简单。
+     示例：
+     枚举对象中: 45, 完成.
+     对象计数中: 100% (45/45), 完成.
+     使用 8 个线程进行压缩
+     压缩对象中: 100% (40/40), 完成.
+     写入对象中: 100% (45/45), 297.36 KiB | 27.03 MiB/s, 完成.
+     总共 45（差异 10），复用 0（差异 0），包复用 0
+     remote: Resolving deltas: 100% (10/10), done.
+     To https://github.com/usandthem26/usandthem26.github.io.git
+     * [new branch]      master -&gt; master
+     分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。
 
  5.成功部署到GitHub。
 </code></pre>

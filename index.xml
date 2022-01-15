@@ -16,7 +16,8 @@
       <description>【打开终端】
 一、使用brew安装Hugo
  * 需要提前下载安装brew，网上有详细教程。 brew install hugo hugo version * 查看Hugo版本，安装完成。  二、使用Hugo生成一个博客网站
- hugo new site myblog * Hugo为你创建了一个myblog文件夹，你网站的所有数据都将储存在这个文件夹当中。 示例： “Congratulations! Your new Hugo site is created in /Users/juanjuanli/mybolog. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/ or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content.</description>
+ hugo new site myblog * Hugo为你创建了一个myblog文件夹，你网站的所有数据都将储存在这个文件夹当中。 示例： “Congratulations! Your new Hugo site is created in /Users/juanjuanli/mybolog. ...“  三、为网站设置一个主题
+ * 可以到Hugo主题官网：themes.gohugo.io下载。 * 根据提示安装和配置主题，例如我选择了一个叫“Dream”的主题。 1.下载主题 * 使用git克隆主题到本地。 * 需要确认提前装好git，网上同样有详细教程，非常简单。 跟目录下 cd themes git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream 示例： &amp;quot;正克隆到 &#39;dream&#39;... remote: Enumerating objects: 3111, done. remote: Counting objects: 100% (770/770), done. remote: Compressing objects: 100% (399/399), done.</description>
     </item>
     
   </channel>
