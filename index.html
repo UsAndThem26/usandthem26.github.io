@@ -128,7 +128,40 @@
   <div class="content no-cover">
   
     <h2 class="ui medium header">
-      <a href="/post/blog_1/">如何使用Hugo改动原有博文内容</a>
+      <a href="/post/blog_2/">如何更新文章到博客</a>
+    </h2>
+    <div class="meta">
+      <p class="date">
+        Sunday, Jan 16, 2022
+      </p>
+    </div>
+    <div class="description">
+      * 使用Hugo更新文章到博客 * 原来更新博文很简单，超级简单，几乎就是重复写入命令，看看能不能找个脚本省去这些重复的步骤吧。 * 就看我有没有文章可以更新了。  【打开终端】
+一、根目录下新建一个.md文件
+ hugo new post/blog_1.md * 生成文件位置位于myblog/content/post目录下。 示例： “Content &quot;/Users/juanjuanli/myblog/content/post/blog_1.md&quot; created ...“  二、启动本地个人博客
+ 根目录下 hugo server -t dream --buildDrafts 示例： ”Start building sites … … Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Press Ctrl+C to stop“ 2.使用visual studio code打开位于myblog/content/post的blog_1.md * 更改标题并写一篇博客，保存。  三、部署到新建的GitHub储存库
+ 根目录下 hugo --theme=dream --baseUrl=&quot;https://usandthem26.
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author">@&nbsp;UsAndThem26</div>
+    <div class="reading-time">
+      <i class="clock icon"></i>1</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  
+
+  
+  <div class="content no-cover">
+  
+    <h2 class="ui medium header">
+      <a href="/post/blog_1/">使用Hugo改动原有博文内容</a>
     </h2>
     <div class="meta">
       <p class="date">
@@ -138,15 +171,15 @@
     <div class="description">
       「非专业，不懂技术原理，单纯想要更改原先的的文章，只要目的达到了就可以了。于是就挨个试试看，有时间再去了解原理吧。」
 一、在vscode打开需要修改的文章.md文件
- 修改内容并点击保存。  二、打开终端
- 根目录myblog下 hugo server -t dream --buildDrafts 【Start building sites … hugo v0.91.2+extended darwin/arm64 BuildDate=unknown | ZH-CN -------------------+-------- Pages | 10 Paginator pages | 0 Non-page files | 0 Static files | 18 Processed images | 0 Aliases | 2 Sitemaps | 1 Cleaned | 0 Built in 13 ms Watching for changes in /Users/juanjuanli/myblog/{archetypes,content,data,layouts,static,themes} Watching for config changes in /Users/juanjuanli/myblog/config.toml Environment: &quot;development&quot; Serving pages from memory Running in Fast Render Mode.
+ * 修改内容并点击保存。  二、打开终端
+ 根目录myblog下 hugo server -t dream --buildDrafts &quot;Start building sites … hugo v0.91.2+extended darwin/arm64 BuildDate=unknown ... Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Press Ctrl+C to stop&quot; ^C% cd public git push -u origin master &quot;分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。 Everything up-to-date&quot; cd .. * 回到根目录 hugo --theme=dream --baseUrl=&quot;https://usandthem26.
     </div>
   </div>
 
   <div class="extra content">
     <div class="author">@&nbsp;UsAndThem26</div>
     <div class="reading-time">
-      <i class="clock icon"></i>2</div>
+      <i class="clock icon"></i>1</div>
   </div>
 </article>
 
@@ -172,7 +205,7 @@
 一、使用brew安装Hugo
  * 需要提前下载安装brew，网上有详细教程。 brew install hugo hugo version * 查看Hugo版本，安装完成。  二、使用Hugo生成一个博客网站
  hugo new site myblog * Hugo为你创建了一个myblog文件夹，你网站的所有数据都将储存在这个文件夹当中。 示例： “Congratulations! Your new Hugo site is created in /Users/juanjuanli/mybolog. ...“  三、为网站设置一个主题
- * 可以到Hugo主题官网：themes.gohugo.io下载。 * 根据提示安装和配置主题，例如我选择了一个叫“Dream”的主题。 1.下载主题 * 使用git克隆主题到本地。 * 需要确认提前装好git，网上同样有详细教程，非常简单。 跟目录下 cd themes git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream 示例： &quot;正克隆到 'dream'... remote: Enumerating objects: 3111, done. remote: Counting objects: 100% (770/770), done. remote: Compressing objects: 100% (399/399), done.
+ * 可以到Hugo主题官网：themes.gohugo.io下载。 * 根据提示安装和配置主题，例如我选择了一个叫“Dream”的主题。 1.下载主题 * 使用git克隆主题到本地。 * 需要确认提前装好git，网上同样有详细教程，非常简单。 跟目录下 cd themes git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream 示例： &quot;正克隆到 'dream'... ... 接收对象中: 100% (3111/3111), 20.08 MiB | 64.00 KiB/s, 完成. 处理 delta 中: 100% (1759/1759), 完成.&quot; 2.
     </div>
   </div>
 
